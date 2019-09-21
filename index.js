@@ -109,7 +109,7 @@ app.post('/coords', function(request, response) {
 			{
 				"fallback": "Required plain-text summary of the attachment.",
 				"color": "#36a64f",
-				"pretext": 'lat: ' + lat + '; lon: ' + lng,
+				"pretext": latlng,
 				"title": person.label + "'s location",
 				"title_link": "https://www.google.com/maps/place/" + latlng,
 				"image_url": "https://maps.googleapis.com/maps/api/staticmap?" +
