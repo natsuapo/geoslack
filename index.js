@@ -45,7 +45,7 @@ var pplCtr = 0;
 // Called by front-end. Receives the coordinates from HTML5 geolocation
 app.post('/coords', function(request, response) {
 	const { body, user, lat, lng } = request;
-	var latlng = lat + "," + lng;
+	var latlng = body.lat + "," + body.lng;
 	var now = new Date();
 
 	// Check if user that clicked is already part of the session. We use localstorage to identify returning users
